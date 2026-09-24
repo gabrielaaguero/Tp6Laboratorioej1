@@ -51,6 +51,7 @@ public class Ejercicio1 extends javax.swing.JFrame {
         pnlPrincipal.setForeground(new java.awt.Color(255, 255, 255));
 
         lblTitulo.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblTitulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/nuevo-producto (1).png"))); // NOI18N
         lblTitulo.setText("Gestion de Productos");
 
         pnlProductos.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -66,6 +67,7 @@ public class Ejercicio1 extends javax.swing.JFrame {
 
         cbxCategoria.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Perfumeria", "Limpieza", "Ropa", "Electronica", "Comestible" }));
 
+        btnAgregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/anadir-al-carrito (1).png"))); // NOI18N
         btnAgregar.setText("Agregar");
         btnAgregar.addActionListener(this::btnAgregarActionPerformed);
 
@@ -153,7 +155,7 @@ public class Ejercicio1 extends javax.swing.JFrame {
                 .addComponent(lblTitulo)
                 .addGap(18, 18, 18)
                 .addComponent(pnlProductos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29))
         );
@@ -171,7 +173,7 @@ public class Ejercicio1 extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(pnlPrincipal, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(44, Short.MAX_VALUE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
 
         pack();
